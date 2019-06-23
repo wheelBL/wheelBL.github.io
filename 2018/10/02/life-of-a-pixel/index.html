@@ -79,18 +79,47 @@
 
 
 
-<meta name="description" content="大体流程web content -&amp;gt; magic -&amp;gt; pixels web contentweb content主要包含HTML，CSS，JS。   HTML（Hyper-Text Markup Language，页面结构与内容） CSS（Cascading Style Sheets，页面样式） JS（JavaScript，负责页面界面结构与内容和页面样式的更新）">
+<meta name="description" content="大体流程web content -&amp;gt; magic（渲染） -&amp;gt; pixels web contentweb content主要包含HTML，CSS，JS。   HTML（Hyper-Text Markup Language，页面结构与内容） CSS（Cascading Style Sheets，页面样式） JS（JavaScript，负责页面界面结构与内容和页面样式的更新）   其中在">
 <meta property="og:type" content="article">
-<meta property="og:title" content="life_of_a_pixel">
+<meta property="og:title" content="一个像素的一生">
 <meta property="og:url" content="http://yoursite.com/2018/10/02/life-of-a-pixel/index.html">
 <meta property="og:site_name" content="wheel的博客">
-<meta property="og:description" content="大体流程web content -&amp;gt; magic -&amp;gt; pixels web contentweb content主要包含HTML，CSS，JS。   HTML（Hyper-Text Markup Language，页面结构与内容） CSS（Cascading Style Sheets，页面样式） JS（JavaScript，负责页面界面结构与内容和页面样式的更新）">
-<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/2018-10-02-22-57-58.png">
-<meta property="og:updated_time" content="2018-10-02T15:19:57.883Z">
+<meta property="og:description" content="大体流程web content -&amp;gt; magic（渲染） -&amp;gt; pixels web contentweb content主要包含HTML，CSS，JS。   HTML（Hyper-Text Markup Language，页面结构与内容） CSS（Cascading Style Sheets，页面样式） JS（JavaScript，负责页面界面结构与内容和页面样式的更新）   其中在">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/web-content.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/content.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/goals.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/stages.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/parsing.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/DOM1.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/DOM2.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/style1.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/style2.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/style3.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/style4.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/style5.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/style6.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/layout1.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/layout2.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/layout3.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/layout4.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/layout5.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/layout6.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/layout7.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/layout8.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/paint1.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/paint2.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/paint3.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/raster1.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/raster2.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/raster3.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/gpu1.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/gpu2.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/gpu3.png">
+<meta property="og:updated_time" content="2018-10-07T02:18:12.146Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="life_of_a_pixel">
-<meta name="twitter:description" content="大体流程web content -&amp;gt; magic -&amp;gt; pixels web contentweb content主要包含HTML，CSS，JS。   HTML（Hyper-Text Markup Language，页面结构与内容） CSS（Cascading Style Sheets，页面样式） JS（JavaScript，负责页面界面结构与内容和页面样式的更新）">
-<meta name="twitter:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/2018-10-02-22-57-58.png">
+<meta name="twitter:title" content="一个像素的一生">
+<meta name="twitter:description" content="大体流程web content -&amp;gt; magic（渲染） -&amp;gt; pixels web contentweb content主要包含HTML，CSS，JS。   HTML（Hyper-Text Markup Language，页面结构与内容） CSS（Cascading Style Sheets，页面样式） JS（JavaScript，负责页面界面结构与内容和页面样式的更新）   其中在">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/02/life-of-a-pixel/web-content.png">
 
 
 
@@ -126,7 +155,7 @@
 
 
 
-  <title>life_of_a_pixel | wheel的博客</title>
+  <title>一个像素的一生 | wheel的博客</title>
   
 
 
@@ -251,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">life_of_a_pixel</h1>
+          <h1 class="post-title" itemprop="name headline">一个像素的一生</h1>
         
 
         <div class="post-meta">
@@ -301,15 +330,59 @@
       
 
       
-        <h1 id="大体流程"><a href="#大体流程" class="headerlink" title="大体流程"></a>大体流程</h1><p>web content -&gt; magic -&gt; pixels</p>
+        <h1 id="大体流程"><a href="#大体流程" class="headerlink" title="大体流程"></a>大体流程</h1><p>web content -&gt; magic（渲染） -&gt; pixels</p>
 <h2 id="web-content"><a href="#web-content" class="headerlink" title="web content"></a>web content</h2><p>web content主要包含HTML，CSS，JS。</p>
-<img src="/2018/10/02/life-of-a-pixel/2018-10-02-22-57-58.png">
+<img src="/2018/10/02/life-of-a-pixel/web-content.png">
 <ol>
 <li>HTML（Hyper-Text Markup Language，页面结构与内容）</li>
 <li>CSS（Cascading Style Sheets，页面样式）</li>
 <li>JS（JavaScript，负责页面界面结构与内容和页面样式的更新）</li>
 </ol>
-
+<img src="/2018/10/02/life-of-a-pixel/content.png">
+<p>其中在Chromium中用于渲染的引擎被称为 <strong>Blink</strong> 。渲染需要调用图像处理的底层API。其统一标准为openGL。目前正在开发Vulkan进行统一化。底层API不能读懂HTML和CSS，只能做简单的图像绘制。</p>
+<img src="/2018/10/02/life-of-a-pixel/goals.png">
+<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><img src="/2018/10/02/life-of-a-pixel/stages.png">
+<p>整个流程是要将web content转化为对应的图像处理API，在这个过程中，为了更好地将已经渲染的图像 <strong>更新</strong>，需要设计数据结构帮助我们更新页面的结构、内容和页面样式。这些更新包括JavaScript API，用户在，输入框的输入，异步加载，动画，卷轴移动，页面缩放等。</p>
+<h3 id="初始渲染"><a href="#初始渲染" class="headerlink" title="初始渲染"></a>初始渲染</h3><h4 id="parse"><a href="#parse" class="headerlink" title="parse"></a>parse</h4><img src="/2018/10/02/life-of-a-pixel/parsing.png">
+<img src="/2018/10/02/life-of-a-pixel/DOM1.png">
+<img src="/2018/10/02/life-of-a-pixel/DOM2.png">
+<h3 id="style"><a href="#style" class="headerlink" title="style"></a>style</h3><img src="/2018/10/02/life-of-a-pixel/style1.png">
+<img src="/2018/10/02/life-of-a-pixel/style2.png">
+<img src="/2018/10/02/life-of-a-pixel/style3.png">
+<p>CSS是HTML的样式，所以要依附到DOM对象上。这个依附的过程，也就是 <strong>CSS选择</strong> 的过程。但是由于HTML的树状结构，CSS有时需要写的十分复杂以去高效的匹配到相对应的DOM元素。</p>
+<img src="/2018/10/02/life-of-a-pixel/style4.png">
+<p>在CSS解析时，解析器会将每一个选择器所选择的CSS属性名和属性值保存，作为map。<br>CSS属性名是由C++进行生成的，该C++文件在构建时由python脚本自动生成。</p>
+<img src="/2018/10/02/life-of-a-pixel/style5.png">
+<p>下一步，称为重计算（recalc），对于所有产生的属性，我们会计算它们的叠加和。作为每一个DOM元素的每一个属性的值，这个值也称为计算值。也就是最终渲染的结构。</p>
+<img src="/2018/10/02/life-of-a-pixel/style6.png">
+<p>这个属性值我们可以用Chrome的API或者是JavaScript DOM API均可以得到。</p>
+<h3 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h3><img src="/2018/10/02/life-of-a-pixel/layout1.png">
+<p>通过上面获得的计算属性，我们就可以确定每一个元素在视图上占据的确定位置。</p>
+<img src="/2018/10/02/life-of-a-pixel/layout2.png">
+<p>这里举个一个简单的例子。就是每一个元素是由上向下一次排列的，每一个元素的高度由字体的大小和间距所决定。</p>
+<img src="/2018/10/02/life-of-a-pixel/layout3.png">
+<img src="/2018/10/02/life-of-a-pixel/layout4.png">
+<p>但是，实际情况往往比较复杂。比如一个元素的内容超出了边界，那么该元素会呈现可滚动的特性，这时页面需要实时计算显示的区域。<br>再比如表格布局、浮动、文本分列、flex布局、writing-mode等属性，都会带来布局的复杂程度。<br>所以，我们需要一个更加完善的数据结构去存储这样一些状态，使得每一次迭代都能够变得高效和纯粹。</p>
+<img src="/2018/10/02/life-of-a-pixel/layout5.png">
+<img src="/2018/10/02/life-of-a-pixel/layout6.png">
+<p>DOM节点基本同layout对象一一对应，有些许不同。例如，不是每一个DOM元素都对应有一个Layout Object，比如对于一个display属性设置为none的元素；同时也不是每一个Layout Object都对应一个DOM元素，比如伪元素。</p>
+<img src="/2018/10/02/life-of-a-pixel/layout7.png">
+<img src="/2018/10/02/life-of-a-pixel/layout8.png">
+<p>这里引入新的数据结构，是对之前重计算所得到的Render Tree的进一步封装，将之前的复杂情况进一步考虑，得到最终每一个元素在视图上的最终为止，即 <strong>Layout Tree</strong>。</p>
+<p>基于Layout Tree，我们可以处理overflow等一系列复杂情况。但是还有一个问题是，这种数据结构没有将输入的计算属性和输出的视图位置分开，所以这里提及了一个正在开发的新项目名为LayoutNG就是为了解决这个问题。</p>
+<h3 id="print"><a href="#print" class="headerlink" title="print"></a>print</h3><img src="/2018/10/02/life-of-a-pixel/paint1.png">
+<img src="/2018/10/02/life-of-a-pixel/paint2.png">
+<img src="/2018/10/02/life-of-a-pixel/paint3.png">
+<p>得到上个步骤的Layout对象也就意味着我们可以真正的绘制像素了。但注意，这里绘制也仅仅是语义上的，并没有落实到屏幕上。我们会再一次将Layout对象转化为一个个矩形和其对应的颜色，并且按其 <strong>堆栈</strong> 的形式显示，并非是DOM的出现顺序。并且每一次渲染都是根据某一种属性，比如PPT中简化的集中，背景、浮动、前景，轮廓。</p>
+<h3 id="raster"><a href="#raster" class="headerlink" title="raster"></a>raster</h3><img src="/2018/10/02/life-of-a-pixel/raster1.png">
+<img src="/2018/10/02/life-of-a-pixel/raster2.png">
+<img src="/2018/10/02/life-of-a-pixel/raster3.png">
+<p>在得到元素最终在视图的显示信息，我们就需要真正的进行预渲染。在这一步，我们会将屏幕上每一个像素点的颜色生成一个32位的二进制码，分别表示4种颜色，同时我们可以利用GPU进行渲染加速。这底层使用的是Google自主开发的skia进行图像处理渲染，通过最底层的OpenGL。同时skia作为一个单独的项目，也支持了其他的大型项目，比如安卓系统。</p>
+<h3 id="gpu"><a href="#gpu" class="headerlink" title="gpu"></a>gpu</h3><img src="/2018/10/02/life-of-a-pixel/gpu1.png">
+<img src="/2018/10/02/life-of-a-pixel/gpu2.png">
+<img src="/2018/10/02/life-of-a-pixel/gpu3.png">
+<p>最后需要注意的是真正通过skia调用的openGL API会通过CommandBuffer调用GPU进程，进行真实的渲染。也就是说，真实的渲染是独立出去的，当这一部分进程宕机时我们可以快速的重启。</p>
+<h3 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h3>
       
     </div>
     
@@ -455,7 +528,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#大体流程"><span class="nav-number">1.</span> <span class="nav-text">大体流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#web-content"><span class="nav-number">1.1.</span> <span class="nav-text">web content</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#大体流程"><span class="nav-number">1.</span> <span class="nav-text">大体流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#web-content"><span class="nav-number">1.1.</span> <span class="nav-text">web content</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生命周期"><span class="nav-number">1.2.</span> <span class="nav-text">生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始渲染"><span class="nav-number">1.2.1.</span> <span class="nav-text">初始渲染</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#parse"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">parse</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#style"><span class="nav-number">1.2.2.</span> <span class="nav-text">style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#layout"><span class="nav-number">1.2.3.</span> <span class="nav-text">layout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#print"><span class="nav-number">1.2.4.</span> <span class="nav-text">print</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#raster"><span class="nav-number">1.2.5.</span> <span class="nav-text">raster</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gpu"><span class="nav-number">1.2.6.</span> <span class="nav-text">gpu</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-number">1.2.7.</span> <span class="nav-text">summary</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -475,7 +548,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
