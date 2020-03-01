@@ -1,0 +1,23 @@
+#+TITLE:       2020’s resolution
+#+AUTHOR:      wheel
+#+EMAIL:       wheel@wheeldeMacBook-Pro.local
+#+DATE:        2020-03-01 Sun
+#+URI:         /blog/%y/%m/%d/2020-s-resolution
+#+KEYWORDS:    goals
+#+TAGS:        annual
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: nil
+
+* 年度目标
+1. 自律 玩手机时间控制下来
+2. 看藏书 5+
+3. 锻炼成常态
+4. 回顾
+
+* 月度目标
+** 1-2 月
+忽略
+** 3 月
+*** TODO leetcode 基本套路学习
+*** TODO clean code
